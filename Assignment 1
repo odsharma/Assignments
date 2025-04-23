@@ -1,0 +1,91 @@
+Assignment:  Create a base 14 numbering system
+
+
+Base-14 Numbering System
+
+In a base-14 number system, we have 14 unique symbols to represent values.  We use the digits 0-9, and then we need four more symbols say A, B,C,D.  
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D
+
+Where:
+
+A represents 10
+
+B represents 11
+
+C represents 12
+
+D represents 13
+
+Counting in Base-14
+
+How to count:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D, 20, 21, and so on.
+
+After 'D', we go to '10' (which represents fourteen in decimal), just like after '9' we go to '10' in decimal.
+
+Addition in Base-14
+
+
+Single-digit addition:
+
+3 + 5 = 8  (in base-14)
+
+9 + 4 = D  (in base-14)
+
+7 + 8 = F   is not valid,
+7+8 = 15 (in decimal)
+15 = 1*14 + 1
+So, 7 + 8 = 11 (in base 14)
+
+Double-digit addition:
+
+Consider adding 2B and 1C in base-14:
+
+First, add B (11) and C (12): 11 + 12 = 23 (in decimal).
+
+23 = 1 * 14 + 9.  So, we write down '9' and carry-over '1'.
+
+Then, add 2, 1, and the carry-over 1: 2 + 1 + 1 = 4.
+
+So, 2B + 1C = 49 (in base-14)
+
+Multiplication in Base-14
+
+Let's do some multiplication examples:
+
+Single-digit multiplication:
+
+2 x 3 = 6 (in base-14)
+
+3 x A = 3 x 10 = 30 (in decimal).  30 = 2 * 14 + 2.  So, 3 x A = 22 (in base-14)
+
+A x B = 10 * 11 = 110 (in decimal). 110 = 7 * 14 + 12. So, A x B = 7C (in base-14)
+
+Double-digit multiplication:
+
+Let's multiply 23 by 12 in base 14.  For clarity, let's follow a method similar to decimal multiplication:
+
+2 3
+x 1 2
+------
+4 6  (2 x 23 = 46 in base 14.  2*3 = 6, 2*2 = 4)
+2 3 0 (1 x 23 = 23, add a zero)
+------
+2 7 6
+
+Here's how we got those values:
+2 * 3 = 6
+2 * 2 = 4
+1 * 3 = 3
+1 * 2 = 2
+
+Now add them
+6 + 0 = 6
+4 + 3 = 7
+2 + 0 = 2
+
+So the answer is 276.
+
+
